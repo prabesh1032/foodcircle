@@ -1,0 +1,156 @@
+
+
+body {
+    width: auto;
+    color: black;
+    background-color: #c7fff2;
+    font-family:  sans-serif;
+}
+
+
+.navBar {
+
+    width: 100%;
+    position: fixed;
+    left:0;
+    top:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 1;
+    padding: 25;
+    background-color: #192140;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+}
+section{
+    position:absolute;
+    color:black;
+    text-decoration: none;
+    z-index: 1;
+    top: 450px;
+    left:25px;
+}
+.contact a{
+    color:cyan;
+    text-decoration: none;
+
+}
+.IntroMsg a{
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+img{
+    margin: 10px;
+}
+
+
+
+.header {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+}
+
+.IntroMsg {
+     text-align: center;
+    padding: 10px;
+    height: auto;  
+}
+
+.menuIntro>img {
+    width: 70%;
+    border-radius: 10%;
+    height: auto;
+    box-shadow: 2px 2px 5px black;
+   }
+
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding: 20px;
+    }
+.home-menu li {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 20px 0 20px 20%;
+    border-bottom: 1px solid black;
+}
+.dish {
+    float: left;
+    color: black;
+    font-style: italic;
+}
+
+.Price {
+    float: right;
+    color: black;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.message>img{
+    width: 94%;
+    border-radius: 1%;
+    box-shadow: 2px 2px 5px cyan;
+    margin-right: 0;
+
+    }
+.message{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+}
+.text>a{
+    font-style:italic;
+    color: #414242;   
+}
+ .footer{
+     background-color: #192140;
+    text-align: center;
+    color: white;
+    height: auto;
+}
+.img-bg{
+    opacity: 0.65;
+    z-index:0;
+}
+ .css{ 
+    position: absolute;
+    top:200px;
+    left:550px;
+    border-radius: 40px;
+    background-color: cyan;
+    padding:40px;
+    width:200px;
+    box-shadow:2px 2px 5px black; 
+    align-items: center;
+    border: solid 1px black;
+    }
+    .submit{
+    text-align: center; 
+    
+}
+.GG{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 5px;
+    align-items: center;
+}

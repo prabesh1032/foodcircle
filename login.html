@@ -1,0 +1,83 @@
+<html>
+	<head>
+    <title>Food Circle</title>
+    <link rel="stylesheet" type="text/css" href="restud.css">
+</head>
+<body>
+     <div class="navBar" id="nv">
+                <a href='home.html'>HOME </a>
+                <a href='menu.html'>MENU </a>
+                <a href='about.html'>ABOUT</a>
+                <a href='contactus.html'>CONTACT US </a>
+    </div>
+    <div class ="img-bg"> 
+       <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D&w=1310&q=70">     
+    </div>
+    <form action="#" onsubmit="return validate()">
+        <div class='css'>
+            <div class ='GG'>
+            <input type="text" id="username" placeholder="Name">
+            </div>
+            <br><br>
+            <div class ='GG'>
+            <input type='text'id='add' placeholder="Address">
+            </div>
+            <br><br>
+             <div class ='GG'>
+            <input type="email" id="email" placeholder="Email">
+            </div>
+            <br><br>
+             <div class ='GG'>
+            <input type="number" id="number" placeholder="Phone-Number">
+            </div>
+            <br><br>
+            <div class='submit'>
+            <input type="submit" value="Login">
+        </div>
+        </div>
+    </form>
+    <script>
+        function validate() {
+            var uname = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('number').value;
+            var addr = document.getElementById('add').value;
+
+            if (uname == "" || email == "" || phone == "" ||addr=="") {
+                alert('Fields cannot be empty');
+                return false;
+            }
+
+            if (uname.length < 8) {
+                alert('Username must be at least 8 characters long');
+                return false;
+            }
+
+            if (uname.length > 15) {
+                alert('Username should be at most 15 letters');
+                return false;
+            }
+
+            var Epattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var Ppattern = /^\d{10,}$/;
+            var check = Epattern.test(email);
+            var checkphone = Ppattern.test(phone);
+
+            if (!check) {
+                alert('Invalid email address');
+                return false;
+            }
+
+            if (!checkphone) {
+                alert('Invalid phone number');
+                return false;
+            }
+
+            return true; // Form submission will proceed if all validations pass
+        }
+    </script>
+    <div class="footer">
+	<h4>Food Circle</h4>
+<p>Copyright &copy;2023; Designed by Prabesh Acharya </p>	
+</div>
+</body>
